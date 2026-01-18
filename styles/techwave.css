@@ -51,6 +51,130 @@ nav > span {
   transition: 0.3s ease;
 }
 /* banner related style */
+.banner {
+  background-color: #1a0b2e;
+  position: relative;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+.wave-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-width: 1200px;
+  z-index: -1;
+}
+.podcast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.main-circle-box {
+  position: relative;
+  width: 250px;
+  z-index: 5;
+}
+
+.center-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px;
+  padding: 10px;
+}
+.side-img {
+  width: 90px;
+  z-index: 10;
+  margin-left: -170px;
+}
+/* new-badge */
+.new-badge {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  background-color: #00ff88;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.banner-content h1 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 3.75rem;
+  margin-bottom: 8px;
+}
+
+.banner-content p {
+  color: #ffffff;
+  font-weight: 400;
+  max-width: 550px;
+  opacity: 0.8;
+  margin: 0 auto 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-spotify {
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  color: white;
+  border: none;
+  padding: 12px 20px 12px 20px;
+
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-subscribe {
+  background: transparent;
+  color: white;
+  border: 2px solid #00ff88;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* about the podcast section */
+.about-section {
+  padding: 50px 200px 80px 200px;
+  color: white;
+  text-align: center;
+}
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-header h2 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.about-header p {
+  max-width: 1200px;
+  font-weight: 400;
+  margin: 0 auto 15px;
+  line-height: 20px;
+}
+.highlight-text {
+  margin-top: 30px !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
 
 /* responsive codes */
 @media screen and (max-width: 576px) {
@@ -61,5 +185,48 @@ nav > span {
   nav > span {
     /* margin-right: 18px; */
     display: inline;
+  }
+  .banner {
+    padding: 40px 10px;
+  }
+  .main-circle-box {
+    width: 200px;
+    height: 200px;
+  }
+  .wave-bg {
+    min-width: 100%;
+    top: 45%;
+  }
+  .side-img {
+    width: 60px;
+    z-index: 10;
+    margin-left: -135px;
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+  .banner-content p {
+    font-size: 0.7rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .cta-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-spotify,
+  .btn-subscribe {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 20px;
+  }
+
+  .new-badge {
+    font-size: 12px;
+    padding: 3px 10px;
+    right: 0px;
   }
 }
