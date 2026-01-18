@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: rgba(26, 11, 46, 1);
+}
+/* navbar related style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  margin-top: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+nav > span {
+  margin-right: 18px;
+  display: none;
+}
+.subscribe-btn {
+  background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+  color: white;
+  width: 135px;
+  height: 44px;
+  text-align: center;
+  padding: 12px 16px 12px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.subscribe-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+/* banner related style */
+
+/* responsive codes */
+@media screen and (max-width: 576px) {
+  .nav-links,
+  .subscribe-btn {
+    display: none;
+  }
+  nav > span {
+    /* margin-right: 18px; */
+    display: inline;
+  }
+}
