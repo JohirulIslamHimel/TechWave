@@ -204,7 +204,7 @@ nav > span {
   text-align: center;
   color: #ffffff;
 }
-.section-title {
+.section-title1 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 58px;
@@ -268,7 +268,7 @@ nav > span {
   margin-bottom: 20px;
 }
 /* --- Featured Episodes Section --- */
-.section-title {
+.section-title2 {
   font-size: 3rem;
   font-weight: 700px;
   line-height: 58px;
@@ -351,6 +351,13 @@ nav > span {
   padding: 80px;
   text-align: center;
 }
+.host-title {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 40px;
+}
 .host-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -388,14 +395,27 @@ nav > span {
   gap: 8px;
 }
 .social-links a img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   padding: 3px;
   border: 1px solid rgba(83, 60, 114, 1);
   transition: opacity 0.3s;
 }
-
+/* footer section */
+.footer-section {
+  background-color: rgba(26, 11, 46, 1);
+  padding: 60px 0;
+  overflow: hidden;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /* responsive codes */
 @media screen and (max-width: 576px) {
   .nav-links,
@@ -461,7 +481,7 @@ nav > span {
     font-size: 2rem;
   }
   /* why choose TechWave */
-  .section-title {
+  .section-title1 {
     font-size: 2rem;
     margin-top: 40px;
     margin-bottom: 16px;
@@ -497,18 +517,48 @@ nav > span {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-
-  .featured-episodes .section-title {
+  .featured-episodes .section-title2 {
     font-size: 2rem;
     margin-bottom: 20px;
     margin-top: 40px;
   }
-
   .episode-info {
     padding: 16px;
   }
-
   .episode-info h3 {
     font-size: 1.25rem;
+  }
+  /* Meet the Host */
+  .meet-host {
+    padding: 30px;
+  }
+
+  .host-title {
+    font-size: 2rem;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .host-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .host-content h3 {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 8px;
   }
 }
