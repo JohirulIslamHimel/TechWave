@@ -151,7 +151,7 @@ nav > span {
 }
 /* about the podcast section */
 .about-section {
-  padding: 50px 200px 80px 200px;
+  padding: 100px 20px;
   color: white;
   text-align: center;
 }
@@ -160,22 +160,43 @@ nav > span {
   margin: 0 auto;
 }
 .about-header h2 {
-  font-size: 3rem;
-  margin-bottom: 16px;
-  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 .about-header p {
-  max-width: 1200px;
-  font-weight: 400;
+  max-width: 800px;
   margin: 0 auto 15px;
-  line-height: 20px;
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 .highlight-text {
-  margin-top: 30px !important;
-  color: #ffffff !important;
+  margin-top: 30px;
+  color: #ffffff;
   font-weight: 500;
 }
-
+.about-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.stat-item {
+  flex: 1;
+  min-width: 200px;
+}
+.stat-item h3 {
+  font-size: 3rem;
+  color: #00ff88;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.stat-item p {
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 /* responsive codes */
 @media screen and (max-width: 576px) {
   .nav-links,
@@ -228,5 +249,16 @@ nav > span {
     font-size: 12px;
     padding: 3px 10px;
     right: 0px;
+  }
+  .about-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .stat-item {
+    min-width: 40%;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
   }
 }
