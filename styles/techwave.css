@@ -38,12 +38,15 @@ nav > span {
 .subscribe-btn {
   background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
   color: white;
-  width: 135px;
+  width: auto;
   height: 44px;
   text-align: center;
-  padding: 12px 16px 12px 16px;
+  padding: 12px 16px;
   border-radius: 30px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 .subscribe-btn:hover {
   opacity: 0.9;
@@ -93,7 +96,7 @@ nav > span {
   z-index: 10;
   margin-left: -170px;
 }
-/* new-badge */
+/* banner-section */
 .new-badge {
   position: absolute;
   top: 20px;
@@ -119,7 +122,7 @@ nav > span {
   margin: 0 auto 30px;
 }
 
-.cta-buttons {
+.bta-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -134,10 +137,13 @@ nav > span {
   );
   color: white;
   border: none;
-  padding: 12px 20px 12px 20px;
-
+  padding: 12px 20px;
   border-radius: 50px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   cursor: pointer;
 }
 
@@ -148,6 +154,10 @@ nav > span {
   padding: 12px 30px;
   border-radius: 50px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 /* about the podcast section */
 .about-section {
@@ -471,10 +481,7 @@ nav > span {
     padding: 0 10px;
     margin-bottom: 20px;
   }
-  .cta-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .bta-buttons {
     gap: 8px;
   }
   .btn-spotify,
