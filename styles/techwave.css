@@ -50,12 +50,16 @@ nav > span {
 }
 .subscribe-btn:hover {
   opacity: 0.9;
-  transform: translateY(-2px);
+  transform: translateY(5px);
   transition: 0.3s ease;
 }
 /* banner related style */
 .banner {
   background-color: #1a0b2e;
+  background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
   position: relative;
   padding: 80px 20px;
   text-align: center;
@@ -63,7 +67,7 @@ nav > span {
   overflow: hidden;
   z-index: 1;
 }
-.wave-bg {
+/* .wave-bg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,40 +75,40 @@ nav > span {
   width: 100%;
   min-width: 1200px;
   z-index: -1;
-}
+} */
 .podcast-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  height: 250px;
 }
 .main-circle-box {
   position: relative;
-  width: 250px;
-  z-index: 5;
+  width: 300px;
+  z-index: 10;
 }
 
 .center-img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  border: 4px;
-  padding: 10px;
+  /* border-radius: 50%; */
+  /* border: 4px; */
+  /* padding: 10px; */
 }
 .side-img {
-  width: 90px;
+  width: 120px;
   z-index: 10;
-  margin-left: -170px;
+  margin-left: -210px;
 }
 /* banner-section */
 .new-badge {
   position: absolute;
   top: 20px;
-  right: -10px;
+  right: -1px;
   background-color: #00ff88;
   padding: 5px 15px;
   border-radius: 20px;
-  font-size: 14px;
   font-weight: bold;
 }
 .banner-content h1 {
