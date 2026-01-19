@@ -267,6 +267,135 @@ nav > span {
   width: 44px;
   margin-bottom: 20px;
 }
+/* --- Featured Episodes Section --- */
+.section-title {
+  font-size: 3rem;
+  font-weight: 700px;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.featured-episodes {
+  background-color: rgba(26, 11, 46, 1);
+  padding: 80px 5%;
+  text-align: center;
+}
+.featured-episodes .section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 58px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.episode-card {
+  background-color: rgba(37, 13, 68, 1);
+  gap: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+.video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+.episode-info {
+  padding: 24px;
+  flex-grow: 1;
+}
+.episode-info h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 29px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.episode-info p {
+  color: rgba(239, 233, 233, 0.868);
+  line-height: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.duration-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.duration-icon {
+  width: 20px;
+  height: 20px;
+}
+.duration {
+  color: #00ff88;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* Meet the Host */
+.meet-host {
+  background-color: rgba(26, 11, 46, 1);
+  padding: 80px;
+  text-align: center;
+}
+.host-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.host-card {
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: left;
+}
+.host-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.host-content h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 39px;
+  margin-bottom: 16px;
+}
+.host-content p {
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.6;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.social-links {
+  display: flex;
+  gap: 8px;
+}
+.social-links a img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid rgba(83, 60, 114, 1);
+  transition: opacity 0.3s;
+}
+
 /* responsive codes */
 @media screen and (max-width: 576px) {
   .nav-links,
@@ -361,5 +490,25 @@ nav > span {
   .feature-card p {
     font-size: 1rem;
     line-height: 24px;
+  }
+  /* Featured Episodes section */
+
+  .episodes-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .featured-episodes .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .episode-info {
+    padding: 16px;
+  }
+
+  .episode-info h3 {
+    font-size: 1.25rem;
   }
 }
