@@ -413,6 +413,8 @@ nav > span {
 }
 .footer-container {
   text-align: center;
+  width: 100%;
+  max-width: 1200px;
 }
 .footer-logo img {
   margin-bottom: 32px;
@@ -425,8 +427,6 @@ nav > span {
   margin-bottom: 35px;
 }
 .footer-socials a {
-  display: flex;
-  align-items: center;
   gap: 8px;
   color: #ffffff;
   text-decoration: none;
@@ -483,7 +483,6 @@ nav > span {
     max-width: 250px;
     padding: 10px 20px;
   }
-
   .new-badge {
     font-size: 12px;
     padding: 3px 10px;
@@ -492,11 +491,9 @@ nav > span {
   .about-header h2 {
     font-size: 1.8rem;
   }
-
   .stat-item {
     min-width: 40%;
   }
-
   .stat-item h3 {
     font-size: 2rem;
   }
@@ -552,13 +549,11 @@ nav > span {
   .meet-host {
     padding: 30px;
   }
-
   .host-title {
     font-size: 2rem;
     line-height: 25px;
     margin-bottom: 24px;
   }
-
   .host-card {
     flex-direction: column;
     text-align: center;
@@ -566,20 +561,45 @@ nav > span {
     gap: 24px;
     border-radius: 20px;
   }
-
   .host-image img {
     width: 150px;
     height: 150px;
   }
-
   .host-content h3 {
     font-size: 1.5rem;
     line-height: 25px;
   }
-
   .social-links {
     justify-content: center;
     gap: 8px;
   }
   /* footer section */
+  .techwave-footer {
+    padding: 20px 10px;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* width: 100%; */
+  }
+
+  .footer-logo img {
+    width: 150px;
+    margin-bottom: 25px;
+  }
+
+  .footer-socials {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-socials a img {
+    width: 18px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    width: 100%;
+  }
 }
