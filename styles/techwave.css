@@ -67,15 +67,6 @@ nav > span {
   overflow: hidden;
   z-index: 1;
 }
-/* .wave-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  min-width: 1200px;
-  z-index: -1;
-} */
 .podcast-container {
   display: flex;
   justify-content: center;
@@ -87,6 +78,7 @@ nav > span {
   position: relative;
   width: 300px;
   z-index: 10;
+  left: -70px;
 }
 
 .center-img {
@@ -99,9 +91,8 @@ nav > span {
 .side-img {
   width: 120px;
   z-index: 10;
-  margin-left: -210px;
+  margin-left: -275px;
 }
-/* banner-section */
 .new-badge {
   position: absolute;
   top: 20px;
@@ -323,7 +314,7 @@ nav > span {
 .episode-card {
   background-color: rgba(37, 13, 68, 1);
   gap: 12px;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   text-align: left;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -481,12 +472,9 @@ nav > span {
     padding: 20px;
   }
   .main-circle-box {
-    width: 200px;
-    height: 200px;
-  }
-  .wave-bg {
-    min-width: 100%;
-    top: 45%;
+    width: 150px;
+    height: 150px;
+    left: -35px;
   }
   .side-img {
     width: 60px;
@@ -615,12 +603,10 @@ nav > span {
     /* background-position: center; */
     /* width: 100%; */
   }
-
   .footer-logo img {
     width: 150px;
     margin-bottom: 25px;
   }
-
   .footer-socials {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -628,11 +614,9 @@ nav > span {
     justify-content: center;
     margin-bottom: 20px;
   }
-
   .footer-socials a img {
     width: 18px;
   }
-
   .footer-copy {
     font-size: 12px;
     width: 100%;
