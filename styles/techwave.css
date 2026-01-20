@@ -48,7 +48,7 @@ nav > span {
   justify-content: center;
   gap: 8px;
 }
-.subscribe-btn:hover {
+.subscribe-btn-all:hover {
   opacity: 0.9;
   transform: translateY(5px);
   transition: 0.3s ease;
@@ -78,7 +78,7 @@ nav > span {
   position: relative;
   width: 300px;
   z-index: 10;
-  left: -70px;
+  left: -85px;
 }
 
 .center-img {
@@ -91,7 +91,7 @@ nav > span {
 .side-img {
   width: 120px;
   z-index: 10;
-  margin-left: -275px;
+  margin-left: -292px;
 }
 .new-badge {
   position: absolute;
@@ -116,13 +116,11 @@ nav > span {
   opacity: 0.8;
   margin: 0 auto 30px;
 }
-
 .bta-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .btn-spotify {
   background: linear-gradient(
     47.64deg,
@@ -141,7 +139,6 @@ nav > span {
   gap: 8px;
   cursor: pointer;
 }
-
 .btn-subscribe {
   background: transparent;
   color: white;
@@ -153,6 +150,19 @@ nav > span {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+/* ANIMATION */
+.nav-logo img {
+  animation: soft-breathe 5s ease-in-out infinite;
+}
+@keyframes soft-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 /* about the podcast section */
 .about-section {
@@ -266,13 +276,11 @@ nav > span {
   grid-column: 3;
   grid-row: 3;
 }
-
 .feature-card {
   background-color: rgba(53, 17, 101, 0.4);
   padding: 40px;
   border-radius: 40px;
 }
-
 .feature-card img {
   width: 44px;
   margin-bottom: 20px;
@@ -416,9 +424,8 @@ nav > span {
 .techwave-footer {
   background: url("../assets/footer-bg.png") no-repeat center;
   background-size: cover;
-  background-color: rgba(26, 11, 46, 1);
-  /* max-width: 1200px; */
-  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -428,7 +435,6 @@ nav > span {
   text-align: center;
   width: 100%;
   max-width: 1200px;
-  /* padding: 0 20px; */
 }
 .footer-logo img {
   margin-bottom: 32px;
@@ -437,7 +443,7 @@ nav > span {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 25px;
   width: 100%;
 }
@@ -450,6 +456,7 @@ nav > span {
   opacity: 0.6;
 }
 .footer-copy {
+  margin-top: 32px;
   color: rgb(241, 230, 230);
   opacity: 0.6;
 }
@@ -480,7 +487,6 @@ nav > span {
   }
   .about-section {
     padding: 10px;
-    /* padding-bottom: 40px; */
   }
   .stats-divider {
     margin: 39px auto;
@@ -615,9 +621,6 @@ nav > span {
   /* footer section */
   .techwave-footer {
     padding: 20px 10px;
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* width: 100%; */
   }
   .footer-logo img {
     width: 150px;
@@ -637,6 +640,7 @@ nav > span {
     width: 18px;
   }
   .footer-copy {
+    margin-top: 16px;
     font-size: 12px;
     width: 100%;
   }
